@@ -1,324 +1,343 @@
+
 <!DOCTYPE html>
-<!-- saved from url=(0045)file:///C:/Users/Dell/.vscode/samayo gan2.html -->
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Baina</title>
-  <style>
-    .alert {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background-color: #f1f1f1;
-      padding: 10px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      transition: opacity 0.5s;
-    }
-
-    .alert.show {
-      opacity: 1;
-    }
-
-    .alert.hide {
-      opacity: 0;
-    }
-  </style>
+  <title>Baina new</title>
   <script>
-    var parkingData = {
-      //this data helps in auto populating the input fields. This has been obtained by the help of var outputMessage function.
-      "219": {idInput:"219", jilla1: "मकवानपुर" , palika1: "ईन्द्रसरोवर " , palikatype1: "गाउँपालिका" , ward1: " ४" , grandpa1: "राम बहादुर मगर" , father1: "श्याम बहादुर मगर" ,age1: "४५" , receiver: "भक्तबहादुर मगर" , jilla2: "मकवानपुर" , palika2: "ईन्द्रसरोवर" , palikatype2: "गाउँपालिका" , ward2: "४" , grandpa2: "कृष्णसिंह पाखिन" , father2: "गणेशसिंह पाखिन" , age2: "४५ " , giver: "सोम सिंह पाखिन" , amount1: "५,०००।- (पाँच हजार)" , amount2: "१३,२०,०००।-" , amount3: "१८,२०,०००।-" , timelimit: "४५ दिन" , jilla3: "मकवानपुर" , palika3: "ईन्द्रसरोवर" , palikatype3: "गाउँपालिका" , ward3: "४" , kitta: "३" , area: "१ रोपनि" , place: "मेरै घरको पिडिंमा" ,witness1: "१.मकवानपुर जिल्ला ईन्द्रसरोवर गाउँपालिका वडा नं. ३ बस्ने भानु बहुादुर मगरको छोरा वर्ष २४ को सानु बहादुर मगर" , witness2: "२.मकवानपुर जिल्ला ईन्द्रसरोवर गाउँपालिका वडा नं. ३ बस्ने इन्द्र बहुादुर मगरको छोरा वर्ष २७ को चोलेन्द्र बहादुर मगर" , witness3: "३.मकवानपुर जिल्ला ईन्द्रसरोवर गाउँपालिका वडा नं. ४ बस्ने इन्द्र बहुादुर पाखिन छोरा वर्ष ३४ को आनन्द मोहन पाखिन" , year: "२०८०" , month: "असार" , date: "३०" , day: "७" }
-    }
-    function populateFields() {
-     var id = document.getElementById("idInput").value;
-     var general2Input = document.getElementById('general2Input');
-     var general3Input = document.getElementById('general3Input');
-     var general4Input = document.getElementById('general4Input');
-     var general5Input = document.getElementById('general5Input');
-     var general6Input = document.getElementById('general6Input');
-     var general7Input = document.getElementById('general7Input');
-     var general8Input = document.getElementById('general8Input');
-     var general9Input = document.getElementById('general9Input');
-     var general10Input = document.getElementById('general10Input');
-     var general11Input = document.getElementById('general11Input');
-     var general12Input = document.getElementById('general12Input');
-     var general13Input = document.getElementById('general13Input');
-     var general14Input = document.getElementById('general14Input');
-     var general15Input = document.getElementById('general15Input');
-     var general16Input = document.getElementById('general16Input');
-     var general17Input = document.getElementById('general17Input');
-     var general18Input = document.getElementById('general18Input');
-     var general19Input = document.getElementById('general19Input');
-     var general20Input = document.getElementById('general20Input');
-     var general21Input = document.getElementById('general21Input');
-     var general22Input = document.getElementById('general22Input');
-     var general23Input = document.getElementById('general23Input');
-     var general24Input = document.getElementById('general24Input');
-     var general25Input = document.getElementById('general25Input');
-     var general26Input = document.getElementById('general26Input');
-     var general27Input = document.getElementById('general27Input');
-     var general28Input = document.getElementById('general28Input');
-     var general29Input = document.getElementById('general29Input');
-     var general30Input = document.getElementById('general30Input');
-     var general31Input = document.getElementById('general31Input');
-     var general32Input = document.getElementById('general32Input');
-      var dropdown1Input = document.getElementById("dropdown1Input");
-      var dropdown2Input = document.getElementById("dropdown2Input");
-      var dropdown3Input = document.getElementById("dropdown3Input");
-      // var dropdownpqr = document.getElementById("dropdownpqr");
-      // var custompqrInput = document.getElementById("custompqrInput");
 
-      // var xyzInput = document.getElementById("xyzInput");
-      // var dropdownpqr = document.getElementById("dropdownpqr");
-      // var custompqrInput = document.getElementById("custompqrInput");
+//here pD means parking Data
+var pxD = {
+        //this data helps in auto populating the input fields. This has been obtained by the help of var outputMessage function.
 
+        "219": {idInput:"219",g2I:"मकवानपुर",g3I:"ईन्द्रसरोवर ",d1I:"गाउँपालिका",g4I:" ४",g5I:"राम बहादुर मगर",g6I:"श्याम बहादुर मगर",g7I:"४५",g8I:"भक्तबहादुर मगर",g9I:"मकवानपुर",g10I:"ईन्द्रसरोवर",d2I:"गाउँपालिका",g11I:"४",g12I:"कृष्णसिंह पाखिन",g13I:"गणेशसिंह पाखिन",g14I:"४५ ",g15I:"सोम सिंह पाखिन",g16I:"५,०००।- (पाँच हजार)",g17I:"१३,२०,०००।-",g18I:"१८,२०,०००।-",g19I:"४५ दिन",g20I:"मकवानपुर",g21I:"ईन्द्रसरोवर",d3I:"गाउँपालिका",g22I:"४",g23I:"३",g24I:"१ रोपनि",g25I:"मेरै घरको पिडिंमा",g26I:"१.मकवानपुर जिल्ला ईन्द्रसरोवर गाउँपालिका वडा नं. ३ बस्ने भानु बहुादुर मगरको छोरा वर्ष २४ को सानु बहादुर मगर",g27I:"२.मकवानपुर जिल्ला ईन्द्रसरोवर गाउँपालिका वडा नं. ३ बस्ने इन्द्र बहुादुर मगरको छोरा वर्ष २७ को चोलेन्द्र बहादुर मगर",g28I:"३.मकवानपुर जिल्ला ईन्द्रसरोवर गाउँपालिका वडा नं. ४ बस्ने इन्द्र बहुादुर पाखिन छोरा वर्ष ३४ को आनन्द मोहन पाखिन",g29I:"२०८०",g30I:"असार",g31I:"३०",g32I:"७"},
+      };
 
+      function populateFields() {
+        var id = document.getElementById("idInput").value;
+        var gx2I = document.getElementById("gx2I");
+        var gx3I = document.getElementById("gx3I");
+        var gx4I = document.getElementById("gx4I");
+        var gx5I = document.getElementById("gx5I");
+        var gx6I = document.getElementById("gx6I");
+        var gx7I = document.getElementById("gx7I");
+        var gx8I = document.getElementById("gx8I");
+        var gx9I = document.getElementById("gx9I");
+        var gx10I = document.getElementById("gx10I");
+        var gx11I = document.getElementById("gx11I");
+        var gx12I = document.getElementById("gx12I");
+        var gx13I = document.getElementById("gx13I");
+        var gx14I = document.getElementById("gx14I");
+        var gx15I = document.getElementById("gx15I");
+        var gx16I = document.getElementById("gx16I");
+        var gx17I = document.getElementById("gx17I");
+        var gx18I = document.getElementById("gx18I");
+        var gx19I = document.getElementById("gx19I");
+        var gx20I = document.getElementById("gx20I");
+        var gx21I = document.getElementById("gx21I");
+        var gx22I = document.getElementById("gx22I");
+        var gx23I = document.getElementById("gx23I");
+        var gx24I = document.getElementById("gx24I");
+        var gx25I = document.getElementById("gx25I");
+        var gx26I = document.getElementById("gx26I");
+        var gx27I = document.getElementById("gx27I");
+        var gx28I = document.getElementById("gx28I");
+        var gx29I = document.getElementById("gx29I");
+        var gx30I = document.getElementById("gx30I");
+        var gx31I = document.getElementById("gx31I");
+        var gx32I = document.getElementById("gx32I");
+        var dx1I = document.getElementById("dx1I");
+        var dx2I = document.getElementById("dx2I");
+        var dx3I = document.getElementById("dx3I");
 
-      if (id in parkingData) {
-        idInput.value = parkingData[id].idInput;
-        general2Input.value = parkingData[id].jilla1;
-        general3Input.value = parkingData[id].palika1;
-        general4Input.value = parkingData[id].ward1;
-        general5Input.value = parkingData[id].grandpa1;
-        general6Input.value = parkingData[id].father1;
-        general7Input.value = parkingData[id].age1;
-        general8Input.value = parkingData[id].receiver;
-        general9Input.value = parkingData[id].jilla2;
-        general10Input.value = parkingData[id].palika2;
-        general11Input.value = parkingData[id].ward2;
-        general12Input.value = parkingData[id].grandpa2;
-        general13Input.value = parkingData[id].father2;
-        general14Input.value = parkingData[id].age2;
-        general15Input.value = parkingData[id].giver;
-        general16Input.value = parkingData[id].amount1;
-        general17Input.value = parkingData[id].amount2;
-        general18Input.value = parkingData[id].amount3;
-        general19Input.value = parkingData[id].timelimit;
-        general20Input.value = parkingData[id].jilla3;
-        general21Input.value = parkingData[id].palika3;
-        general22Input.value = parkingData[id].ward3;
-        general23Input.value = parkingData[id].kitta;
-        general24Input.value = parkingData[id].area;
-        general25Input.value = parkingData[id].place;
-        general26Input.value = parkingData[id].witness1;
-        general27Input.value = parkingData[id].witness2;
-        general28Input.value = parkingData[id].witness3;
-        general29Input.value = parkingData[id].year;
-        general30Input.value = parkingData[id].month;
-        general31Input.value = parkingData[id].date;
-        general32Input.value = parkingData[id].day;
-        dropdown1Input.value = parkingData[id].palikatype1;
-        dropdown2Input.value = parkingData[id].palikatype2;
-        dropdown3Input.value = parkingData[id].palikatype3;
-        // dropdownpqr.value = parkingData[id].dropdownpqr;
-        // custompqrInput.value = parkingData[id].custompqr;
+        if (id in pxD) {
+          idInput.value = pxD[id].idInput;
+          gx2I.value = pxD[id].g2I;
+          gx3I.value = pxD[id].g3I;
+          gx4I.value = pxD[id].g4I;
+          gx5I.value = pxD[id].g5I;
+          gx6I.value = pxD[id].g6I;
+          gx7I.value = pxD[id].g7I;
+          gx8I.value = pxD[id].g8I;
+          gx9I.value = pxD[id].g9I;
+          gx10I.value = pxD[id].g10I;
+          gx11I.value = pxD[id].g11I;
+          gx12I.value = pxD[id].g12I;
+          gx13I.value = pxD[id].g13I;
+          gx14I.value = pxD[id].g14I;
+          gx15I.value = pxD[id].g15I;
+          gx16I.value = pxD[id].g16I;
+          gx17I.value = pxD[id].g17I;
+          gx18I.value = pxD[id].g18I;
+          gx19I.value = pxD[id].g19I;
+          gx20I.value = pxD[id].g20I;
+          gx21I.value = pxD[id].g21I;
+          gx22I.value = pxD[id].g22I;
+          gx23I.value = pxD[id].g23I;
+          gx24I.value = pxD[id].g24I;
+          gx25I.value = pxD[id].g25I;
+          gx26I.value = pxD[id].g26I;
+          gx27I.value = pxD[id].g27I;
+          gx28I.value = pxD[id].g28I;
+          gx29I.value = pxD[id].g29I;
+          gx30I.value = pxD[id].g30I;
+          gx31I.value = pxD[id].g31I;
+          gx32I.value = pxD[id].g32I;
+          dx1I.value = pxD[id].d1I;
+          dx2I.value = pxD[id].d2I;
+          dx3I.value = pxD[id].d3I;
 
-        // xyzInput.value = parkingData[id].xyz;
-        // dropdownpqr.value = parkingData[id].dropdownpqr;
-        // custompqrInput.value = parkingData[id].custompqr;
-        idInput.style.backgroundColor = "yellow";
+          idInput.style.backgroundColor = "yellow";
+        } else {
+          idInput.style.backgroundColor = "red";
+        }
+      }
 
-      } else {
-        idInput.style.backgroundColor = "red";
+      function displayOutput() {
+        var idInput = document.getElementById("idInput").value;
+        var gx2I = document.getElementById("gx2I").value;
+        var gx3I = document.getElementById("gx3I").value;
+        var gx4I = document.getElementById("gx4I").value;
+        var gx5I = document.getElementById("gx5I").value;
+        var gx6I = document.getElementById("gx6I").value;
+        var gx7I = document.getElementById("gx7I").value;
+        var gx8I = document.getElementById("gx8I").value;
+        var gx9I = document.getElementById("gx9I").value;
+        var gx10I = document.getElementById("gx10I").value;
+        var gx11I = document.getElementById("gx11I").value;
+        var gx12I = document.getElementById("gx12I").value;
+        var gx13I = document.getElementById("gx13I").value;
+        var gx14I = document.getElementById("gx14I").value;
+        var gx15I = document.getElementById("gx15I").value;
+        var gx16I = document.getElementById("gx16I").value;
+        var gx17I = document.getElementById("gx17I").value;
+        var gx18I = document.getElementById("gx18I").value;
+        var gx19I = document.getElementById("gx19I").value;
+        var gx20I = document.getElementById("gx20I").value;
+        var gx21I = document.getElementById("gx21I").value;
+        var gx22I = document.getElementById("gx22I").value;
+        var gx23I = document.getElementById("gx23I").value;
+        var gx24I = document.getElementById("gx24I").value;
+        var gx25I = document.getElementById("gx25I").value;
+        var gx26I = document.getElementById("gx26I").value;
+        var gx27I = document.getElementById("gx27I").value;
+        var gx28I = document.getElementById("gx28I").value;
+        var gx29I = document.getElementById("gx29I").value;
+        var gx30I = document.getElementById("gx30I").value;
+        var gx31I = document.getElementById("gx31I").value;
+        var gx32I = document.getElementById("gx32I").value;
+        var dx1I = document.getElementById("dx1I").value;
+        var dx2I = document.getElementById("dx2I").value;
+        var dx3I = document.getElementById("dx3I").value;
 
+        //this outputmessage1 is just to generate parking data
+        var outputMessage1 = 
+        "<br><br>"+"&quot;"+idInput+"&quot;"+": "+"{"+"idInput:"+"&quot;"+idInput+"&quot;"+","+
+        "g2I:"+"&quot;"+gx2I+"&quot;"+","+
+        "g3I:"+"&quot;"+gx3I+"&quot;"+","+
+        "d1I:"+"&quot;"+dx1I+"&quot;"+","+
+        "g4I:"+"&quot;"+gx4I+"&quot;"+","+
+        "g5I:"+"&quot;"+gx5I+"&quot;"+","+
+        "g6I:"+"&quot;"+gx6I+"&quot;"+","+
+        "g7I:"+"&quot;"+gx7I+"&quot;"+","+
+        "g8I:"+"&quot;"+gx8I+"&quot;"+","+
+        "g9I:"+"&quot;"+gx9I+"&quot;"+","+
+        "g10I:"+"&quot;"+gx10I +"&quot;"+","+
+        "d2I:"+"&quot;"+dx2I+"&quot;"+","+
+        "g11I:"+"&quot;"+gx11I+"&quot;"+","+
+        "g12I:"+"&quot;"+gx12I+"&quot;"+","+
+        "g13I:"+"&quot;"+gx13I+"&quot;"+","+
+        "g14I:"+"&quot;"+gx14I+"&quot;"+","+
+        "g15I:"+"&quot;"+gx15I+"&quot;"+","+
+        "g16I:"+"&quot;"+gx16I+"&quot;"+","+
+        "g17I:"+"&quot;"+gx17I+"&quot;"+","+
+        "g18I:"+"&quot;"+gx18I+"&quot;"+","+
+        "g19I:"+"&quot;"+gx19I+"&quot;"+","+
+        "g20I:"+"&quot;"+gx20I+"&quot;"+","+
+        "g21I:"+"&quot;"+gx21I+"&quot;"+","+
+        "d3I:"+"&quot;"+dx3I+"&quot;"+","+
+        "g22I:"+"&quot;"+gx22I+"&quot;"+","+
+        "g23I:"+"&quot;"+gx23I+"&quot;"+","+
+        "g24I:"+"&quot;"+gx24I+"&quot;"+","+
+        "g25I:"+"&quot;"+gx25I+"&quot;"+","+
+        "g26I:"+"&quot;"+gx26I+"&quot;"+","+
+        "g27I:"+"&quot;"+gx27I+"&quot;"+","+
+        "g28I:"+"&quot;"+gx28I+"&quot;"+","+
+        "g29I:"+"&quot;"+gx29I+"&quot;"+","+
+        "g30I:"+"&quot;"+gx30I+"&quot;"+","+
+        "g31I:"+"&quot;"+gx31I+"&quot;"+","+
+        "g32I:"+"&quot;"+gx32I+"&quot;"+"}"+"," ;
+   
+        //this outputmessage2 is to generate output after the inputs fields are filled up.
+      var outputMessage2 = "<br><br> लिखितम् "+gx2I+" जिल्ला   "+gx3I + dx1I+"  वडा न.  "+gx4I+" बस्ने  "+gx5I+"को नाति   "+gx6I+"को छोरा  वर्ष  "+gx7I+" का जग्गा धनी म  "+gx8I+"ले   "+gx9I+" जिल्ला   "+gx10I + dx2I+" वडा नं.  "+gx11I+" बस्ने   "+gx12I+"को नाति "+gx13I+"को छोरा   वर्ष  "+gx14I+" का  "+gx15I+" रु. "+gx16I+" जग्गा बिक्री मर्न बैना लिएको हुँ। तपाईबाट यस रुपैयामाथि रु. "+gx17I+" रकम थप लिई जम्मा रु. "+gx18I+" मा आजको  "+gx19I+" दिनभित्र मेरो नाउँको  "+gx20I+" जिल्ला  "+gx21I + dx3I+" वडा नं.  "+gx22I+" मा अवस्थित कि.नं.  "+gx23I+" क्षेत्रफल "+gx24I+" को जग्गा राजिनामा गरिदिनेछु, गरी नदिए तपाईंबाट लिएको उक्त बैना वापतको रु. "+gx16I+" आजको मितिदेखिको दशौदीका हिसावले व्याजसमेत कानूनबमोजिम मेरो घर घरानाबाट असुलउपर गरी लिनु भनी मेरो मञ्जुरीसाथ  "+gx25I+" बसी तल उल्लेखित साक्षीको रोहवरमा जग्गा बिक्री गर्न बैनाबट्टाको लिखत लेखी तपाईलाई दिए ।"+"<br><br><br><br>दायाँ &nbsp;&nbsp; &nbsp;&nbsp; बायाँ"+"<br><br><b><u>साक्षीहरू</u></b><br> "+gx26I+"<br> "+gx27I+"<br> "+gx28I+"<br><br>"+"इति संवत "+gx29I+" साल "+gx30I+" महिना "+gx31I+" गते रोज "+gx32I+" शुभम्.......";
 
+//this generates instant  output when output button is clicked
+      var outputDiv = document.getElementById("output");
+      outputDiv.innerHTML = outputMessage1 + outputMessage2;
+      }
+
+//this will create the stable content in the webpage. you can remove this function if you desire not to obtain such content while loading the webpage.
+    function displayStableOutput() {
+      var stableOutputDiv = document.getElementById("stableOutput");
+
+      for (var id in pxD) {
+        var outputMessage = "लिखितम् "+pxD[id].g2I+" जिल्ला   "+pxD[id].g3I + pxD[id].d1I+"  वडा न.  "+pxD[id].g4I+" बस्ने  "+pxD[id].g5I+"को नाति   "+pxD[id].g6I+"को छोरा  वर्ष  "+pxD[id].g7I+" का जग्गा धनी म  "+pxD[id].g8I+"ले   "+pxD[id].g9I+" जिल्ला   "+pxD[id].g10I + pxD[id].d2I+" वडा नं.  "+pxD[id].g11I+" बस्ने   "+pxD[id].g12I+"को नाति "+pxD[id].g13I+"को छोरा   वर्ष  "+pxD[id].g14I+" का  "+pxD[id].g15I+" रु. "+pxD[id].g16I+" जग्गा बिक्री मर्न बैना लिएको हुँ। तपाईबाट यस रुपैयामाथि रु. "+pxD[id].g17I+" रकम थप लिई जम्मा रु. "+pxD[id].g18I+" मा आजको  "+pxD[id].g19I+" दिनभित्र मेरो नाउँको  "+pxD[id].g20I+" जिल्ला  "+pxD[id].g21I + pxD[id].d3I+" वडा नं.  "+pxD[id].g22I+" मा अवस्थित कि.नं.  "+pxD[id].g23I+" क्षेत्रफल "+pxD[id].g24I+" को जग्गा राजिनामा गरिदिनेछु, गरी नदिए तपाईंबाट लिएको उक्त बैना वापतको रु. "+pxD[id].g16I+" आजको मितिदेखिको दशौदीका हिसावले व्याजसमेत कानूनबमोजिम मेरो घर घरानाबाट असुलउपर गरी लिनु भनी मेरो मञ्जुरीसाथ  "+pxD[id].g25I+" बसी तल उल्लेखित साक्षीको रोहवरमा जग्गा बिक्री गर्न बैनाबट्टाको लिखत लेखी तपाईलाई दिए ।"+"<br><br><br><br>दायाँ &nbsp;&nbsp; &nbsp;&nbsp; बायाँ"+"<br><br><b><u>साक्षीहरू</u></b><br> "+pxD[id].g26I+"<br> "+pxD[id].g27I+"<br> "+pxD[id].g28I+"<br><br>"+"इति संवत "+pxD[id].g29I+" साल "+pxD[id].g30I+" महिना "+pxD[id].g31I+" गते रोज "+pxD[id].g32I+" शुभम्.......";
+    
+        var outputDiv = document.createElement("div");
+        outputDiv.innerHTML = outputMessage+"<br><br>"; 
+        stableOutputDiv.appendChild(outputDiv);
       }
     }
 
-    function displayOutput() {
-      var idInput = document.getElementById("idInput").value;
-      var general2Input = document.getElementById('general2Input').value;
-      var general3Input = document.getElementById('general3Input').value;
-      var general4Input = document.getElementById('general4Input').value;
-      var general5Input = document.getElementById('general5Input').value;
-      var general6Input = document.getElementById('general6Input').value;
-      var general7Input = document.getElementById('general7Input').value;
-      var general8Input = document.getElementById('general8Input').value;
-      var general9Input = document.getElementById('general9Input').value;
-      var general10Input = document.getElementById('general10Input').value;
-      var general11Input = document.getElementById('general11Input').value;
-      var general12Input = document.getElementById('general12Input').value;
-      var general13Input = document.getElementById('general13Input').value;
-      var general14Input = document.getElementById('general14Input').value;
-      var general15Input = document.getElementById('general15Input').value;
-      var general16Input = document.getElementById('general16Input').value;
-      var general17Input = document.getElementById('general17Input').value;
-      var general18Input = document.getElementById('general18Input').value;
-      var general19Input = document.getElementById('general19Input').value;
-      var general20Input = document.getElementById('general20Input').value;
-      var general21Input = document.getElementById('general21Input').value;
-      var general22Input = document.getElementById('general22Input').value;
-      var general23Input = document.getElementById('general23Input').value;
-      var general24Input = document.getElementById('general24Input').value;
-      var general25Input = document.getElementById('general25Input').value;
-      var general26Input = document.getElementById('general26Input').value;
-      var general27Input = document.getElementById('general27Input').value;
-      var general28Input = document.getElementById('general28Input').value;
-      var general29Input = document.getElementById('general29Input').value;
-      var general30Input = document.getElementById('general30Input').value;
-      var general31Input = document.getElementById('general31Input').value;
-      var general32Input = document.getElementById('general32Input').value;
-      var dropdown1Input = document.getElementById("dropdown1Input").value;
-      var dropdown2Input = document.getElementById("dropdown2Input").value;
-      var dropdown3Input = document.getElementById("dropdown3Input").value;
-      
-      var outputMessage = "<br><br>" + "&quot;" + idInput + "&quot;" + ": " + "{" + "idInput:" + "&quot;" + idInput + "&quot;" + "," + "  jilla1:" + " &quot;" + general2Input + "&quot;" + " ," + "  palika1:" + " &quot;" + general3Input + "&quot;" + " ," +  " palikatype1:" + " &quot;" + dropdown1Input + "&quot;" + " ," + " ward1:" + " &quot;" + general4Input + "&quot;" + " ," + "  grandpa1:" + " &quot;" + general5Input + "&quot;" + " ," + "  father1:" + " &quot;" + general6Input + "&quot;" + " ," + "age1:" + " &quot;" + general7Input + "&quot;" + " ," + "  receiver:" + " &quot;" + general8Input + "&quot;" + " ," + "  jilla2:" + " &quot;" + general9Input + "&quot;" + " ," + "  palika2:" + " &quot;" + general10Input + "&quot;" + " ," + " palikatype2:" + " &quot;" + dropdown2Input + "&quot;" + " ," + "  ward2:" + " &quot;" + general11Input + "&quot;" + " ," + "  grandpa2:" + " &quot;" + general12Input + "&quot;" + " ," + "  father2:" + " &quot;" + general13Input + "&quot;" + " ," + "  age2:" + " &quot;" + general14Input + "&quot;" + " ," + " giver:" + " &quot;" + general15Input + "&quot;" + " ," + "  amount1:" + " &quot;" + general16Input + "&quot;" + " ," + "  amount2:" + " &quot;" + general17Input + "&quot;" + " ," + "  amount3:" + " &quot;" + general18Input + "&quot;" + " ," + "  timelimit:" + " &quot;" + general19Input + "&quot;" + " ," + "  jilla3:" + " &quot;" + general20Input + "&quot;" + " ," + "  palika3:" + " &quot;" + general21Input + "&quot;" + " ," + " palikatype3:" + " &quot;" + dropdown3Input + "&quot;" + " ," + "  ward3:" + " &quot;" + general22Input + "&quot;" + " ," + "  kitta:" + " &quot;" + general23Input + "&quot;" + " ," + "  area:" + " &quot;" + general24Input + "&quot;" + " ," + "  place:" + " &quot;" + general25Input + "&quot;" + " ," + "witness1:" + " &quot;" + general26Input + "&quot;" + " ," + " witness2:" + " &quot;" + general27Input + "&quot;" + " ," + " witness3:" + " &quot;" + general28Input + "&quot;" + " ," + " year:" + " &quot;" + general29Input + "&quot;" + " ," + " month:" + " &quot;" + general30Input + "&quot;" + " ," + " date:" + " &quot;" + general31Input + "&quot;" + " ," + " day:" + " &quot;" + general32Input + "&quot;" + " }" + "," +
-
-        "<br><br> लिखितम् " + general2Input + " जिल्ला   " + general3Input + dropdown1Input +"  वडा न.  " + general4Input + " बस्ने  " + general5Input + "को नाति   " + general6Input + "को छोरा  वर्ष  " + general7Input + " का जग्गा धनी म  " + general8Input + "ले   " + general9Input + " जिल्ला   " + general10Input + dropdown2Input + " वडा नं.  " + general11Input + " बस्ने   " + general12Input + "को नाति " + general13Input + "को छोरा   वर्ष  " + general14Input + " का  " + general15Input + " रु. " + general16Input + " जग्गा बिक्री मर्न बैना लिएको हुँ। तपाईबाट यस रुपैयामाथि रु. " + general17Input + " रकम थप लिई जम्मा रु. " + general18Input + " मा आजको  " + general19Input + " दिनभित्र मेरो नाउँको  " + general20Input + " जिल्ला  " + general21Input + dropdown3Input + " वडा नं.  " + general22Input + " मा अवस्थित कि.नं.  " + general23Input + " क्षेत्रफल " + general24Input + " को जग्गा राजिनामा गरिदिनेछु, गरी नदिए तपाईंबाट लिएको उक्त बैना वापतको रु. " + general16Input + " आजको मितिदेखिको दशौदीका हिसावले व्याजसमेत कानूनबमोजिम मेरो घर घरानाबाट असुलउपर गरी लिनु भनी मेरो मञ्जुरीसाथ  " + general25Input + " बसी तल उल्लेखित साक्षीको रोहवरमा जग्गा बिक्री गर्न बैनाबट्टाको लिखत लेखी तपाईलाई दिए ।" +
-
- "<br><br><br><br>दायाँ &nbsp;&nbsp; &nbsp;&nbsp; बायाँ"+
-
-        "<br><br><b><u>साक्षीहरू</u></b><br> " + general26Input + "<br> " + general27Input + "<br> " + general28Input + "<br><br>" + "इति संवत " + general29Input + " साल " + general30Input + " महिना " + general31Input + " गते रोज " + general32Input + " शुभम्......."
-
-      var outputDiv = document.getElementById("output");
-      outputDiv.innerHTML = outputMessage;
-    }
-  </script>
+    // Execute on page load
+    window.onload = function () {
+      populateFields();
+      displayStableOutput();
+    };
+    </script>
 </head>
 
 <body>
   <h3>
-    <center>बैनाबट्टाको कागजको मस्यौदा तयारी </center>
+    <center>
+      समायोजन मुद्दाका फैसलाको मस्यौदा तयारी <br>
+      <u>महाभियानमा</u><br>
+      यहाँलाई हार्दिक स्वागत छ
+    </center>
   </h3>
 
   <label for="descriptionBox">Parking1:</label>
-  <textarea id="descriptionBox" placeholder="Park your text here" style="background-color: lightgrey">copy me</textarea><br><br>
+  <textarea id="descriptionBox" placeholder="Park your text here" style="background-color: lightgrey" > copy me</textarea ><br><br>
 
   <label for="descriptionBox">Parking2:</label>
-  <textarea id="descriptionBox" placeholder="Park your text here"
-    style="background-color: lightgrey"></textarea><br><br>
+  <textarea id="descriptionBox" placeholder="Park your text here" style="background-color: lightgrey" ></textarea ><br><br>
 
   <label for="idInput"> <b>1.ID No:</b></label>
-  <input type="text" id="idInput" name="idInput" onkeyup="populateFields()" style="background-color: yellow;">
-
+  <input type="text" id="idInput" name="idInput" onkeyup="populateFields()" style="background-color: yellow" />
   <!-- user has to add this id history manually. Note: This dropdown does not communicated with script -->
 
-  <select id="dropdownInput">
+  <select id="dxI">
     <option value=""></option>
-    <option value="माया बैना कागज ">BainaKagajofMaya (219)</option>
-  </select><br>
+    <option value="माया बैना कागज ">BainaKagajofMaya (219)</option></select><br>
 
-  <label for="general2Input"><b>2.ज.ध.को जिल्ला (jilla1):</b></label>
-  <textarea id="general2Input" name="general2Input" style="width: 12%"></textarea><br>
+  <label for="gx2I"><b>2.ज.ध.को जिल्ला (jilla1):</b></label>
+  <textarea id="gx2I" name="gx2I" style="width: 12%"></textarea><br>
 
-  <label for="general3Input"><b> 3.ज.ध.को पालिका (palika1):</b></label>
-  <textarea id="general3Input" name="general3Input" style="width: 17%"></textarea>
+  <label for="gx3I"><b> 3.ज.ध.को पालिका (palika1):</b></label>
+  <textarea id="gx3I" name="gx3I" style="width: 17%"></textarea><br>
 
-  <select id="dropdown1Input">
-    <option value=""></option>
-    <option value="महानगरपालिका ">महानगरपालिका</option>
-    <option value="उपमहानगरपालिका ">उपमहानगरपालिका </option>
-    <option value="नगरापालिका ">नगरपालिका</option>
-    <option value="गाउँपालिका">गाउँपालिका</option>
-  </select><br>
-
-  <label for="general4Input"><b>4.ज.ध.को वडा नं.(ward1):</b></label>
-  <textarea id="general4Input" name="general4Input" style="width: 4%"></textarea><br>
-
-  <label for="general5Input"><b>5.ज.ध.को हजूरबुवा (grandpa1):</b></label>
-  <textarea id="general5Input" name="general5Input" style="width: 40%"></textarea><br>
-
-  <label for="general6Input"><b>6.ज.ध.को बुवा (father1):</b></label>
-  <textarea id="general6Input" name="general6Input" style="width: 37%"></textarea><br>
-
-  <label for="general7Input"><b>7.ज.ध.को उमेर (age1):</b></label>
-  <textarea id="general7Input" name="general7Input" style="width: 4%"></textarea><br>
-
-  <label for="general8Input"><b> 8.बैनारकम लिनेवाला (reciever):</b></label>
-  <textarea id="general8Input" name="general8Input" style="width: 37%"></textarea><br>
-
-  <label for="general9Input"><b> 9.किन्नेको जिल्ला (jilla2):</b></label>
-  <textarea id="general9Input" name="general9Input" style="width: 12%"></textarea><br>
-
-  <label for="general10Input"><b>10.किन्नेको पालिका (palika2):.</b></label>
-  <textarea id="general10Input" name="general10Input" style="width: 17%"></textarea>
-
-   <select id="dropdown2Input">
+  <select id="dx1I">
     <option value=""></option>
     <option value="महानगरपालिका ">महानगरपालिका</option>
-    <option value="उपमहानगरपालिका ">उपमहानगरपालिका </option>
+    <option value="उपमहानगरपालिका ">उपमहानगरपालिका</option>
     <option value="नगरापालिका ">नगरपालिका</option>
-    <option value="गाउँपालिका">गाउँपालिका</option>
-  </select><br>
+    <option value="गाउँपालिका">गाउँपालिका</option></select ><br>
 
-  <label for="general11Input"><b>11.किन्नेको वडा नं.(ward2):</b></label>
-  <textarea id="general11Input" name="general11Input" style="width: 4%"></textarea><br><br>
+  <label for="gx4I"><b>4.ज.ध.को वडा नं.(ward1):</b></label>
+  <textarea id="gx4I" name="gx4I" style="width: 4%"></textarea><br>
 
-  <label for="general12Input"><b>12.किन्नेको हजूरबुवा (grandpa2):</b></label>
-  <textarea id="general12Input" name="general12Input" style="width: 40%"></textarea><br>
+  <label for="gx5I"><b>5.ज.ध.को हजूरबुवा (grandpa1):</b></label>
+  <textarea id="gx5I" name="gx5I" style="width: 40%"></textarea><br>
 
-  <label for="general13Input"><b>13.किन्नेको बुवा (father2):</b></label>
-  <textarea id="general13Input" name="general13Input" style="width: 40%"></textarea><br>
+  <label for="gx6I"><b>6.ज.ध.को बुवा (father1):</b></label>
+  <textarea id="gx6I" name="gx6I" style="width: 37%"></textarea><br>
 
-  <label for="general14Input"><b>14.किन्नेको उमेर (age2):</b></label>
-  <textarea id="general14Input" name="general14Input" style="width: 4%"></textarea><br>
+  <label for="gx7I"><b>7.ज.ध.को उमेर (age1):</b></label>
+  <textarea id="gx7I" name="gx7I" style="width: 4%"></textarea><br>
 
-  <label for="general15Input"><b>15.बैना रकम दिनेवाला (giver):</b></label>
-  <textarea id="general15Input" name="general15Input" style="width: 40%"></textarea><br>
+  <label for="gx8I"><b> 8.बैनारकम लिनेवाला (reciever):</b></label>
+  <textarea id="gx8I" name="gx8I" style="width: 37%"></textarea><br>
 
-  <label for="general16Input"><b>16.बैना रकम (amount1):</b></label>
-  <textarea id="general16Input" name="general16Input" style="width: 27%"></textarea><br>
+  <label for="gx9I"><b> 9.किन्नेको जिल्ला (jilla2):</b></label>
+  <textarea id="gx9I" name="gx9I" style="width: 12%"></textarea><br>
 
-  <label for="general17Input"><b>17.बाँकी रकम (amount2):</b></label>
-  <textarea id="general17Input" name="general17Input" style="width: 17%"></textarea><br>
+  <label for="gx10I"><b>10.किन्नेको पालिका (palika2):.</b></label>
+  <textarea id="gx10I" name="gx10I" style="width: 17%"></textarea>
 
-  <label for="general18Input"><b>18.जम्मा रकम (amount3):</b></label>
-  <textarea id="general18Input" name="general18Input" style="width: 17%"></textarea><br>
-
-  <label for="general19Input"><b> 19.भाका (timelimit):</b></label>
-  <textarea id="general19Input" name="general19Input" style="width: 12%" placeholder="..दिन/महिना"></textarea><br>
-
-  <label for="general20Input"><b>20.जग्गा भएको जिल्ला (jilla3):</b></label>
-  <textarea id="general20Input" name="general20Input" style="width: 12%"></textarea><br>
-
-  <label for="general21Input"><b>21.जग्गा भएको पालिका (palika3):</b></label>
-  <textarea id="general21Input" name="general21Input" style="width: 17%"></textarea>
-
-
-  <select id="dropdown3Input">
+  <select id="dx2I">
     <option value=""></option>
     <option value="महानगरपालिका ">महानगरपालिका</option>
-    <option value="उपमहानगरपालिका ">उपमहानगरपालिका </option>
+    <option value="उपमहानगरपालिका ">उपमहानगरपालिका</option>
     <option value="नगरापालिका ">नगरपालिका</option>
-    <option value="गाउँपालिका">गाउँपालिका</option>
-  </select><br>
+    <option value="गाउँपालिका">गाउँपालिका</option></select ><br>
 
-  <label for="general22Input"><b>22.जग्गा भएको वडा (ward3):</b></label>
-  <textarea id="general22Input" name="general22Input" style="width: 3%"></textarea><br>
+  <label for="gx11I"><b>11.किन्नेको वडा नं.(ward2):</b></label>
+  <textarea id="gx11I" name="gx11I" style="width: 4%"></textarea><br><br>
 
-  <label for="general23Input"><b> 23.कि.नं. (kitta):</b></label>
-  <textarea id="general23Input" name="general23Input" style="width: 4%" ></textarea><br>
+  <label for="gx12I"><b>12.किन्नेको हजूरबुवा (grandpa2):</b></label>
+  <textarea id="gx12I" name="gx12I" style="width: 40%"></textarea><br>
 
-  <label for="general24Input"><b>24.क्षेत्रफल (area):</b></label>
-  <textarea id="general24Input" name="general24Input" style="width: 17%"></textarea><br>
+  <label for="gx13I"><b>13.किन्नेको बुवा (father2):</b></label>
+  <textarea id="gx13I" name="gx13I" style="width: 40%"></textarea><br>
 
-  <label for="general25Input"><b>25.कागज गरेको स्थान (place):</b></label>
-  <textarea id="general25Input" name="general25Input" style="width: 27%" placeholder="मेरै घरको आँगनमा"></textarea><br>
+  <label for="gx14I"><b>14.किन्नेको उमेर (age2):</b></label>
+  <textarea id="gx14I" name="gx14I" style="width: 4%"></textarea><br>
 
-  <label for="general26Input"><b>26.साक्षी१ (witness1):</b></label>
-  <textarea id="general26Input" name="general26Input" style="width: 67%"></textarea><br>
+  <label for="gx15I"><b>15.बैना रकम दिनेवाला (giver):</b></label>
+  <textarea id="gx15I" name="gx15I" style="width: 40%"></textarea><br>
 
-  <label for="general27Input"><b>27.साक्षी२ (witness2):</b></label>
-  <textarea id="general27Input" name="general27Input" style="width: 67%"></textarea><br>
+  <label for="gx16I"><b>16.बैना रकम (amount1):</b></label>
+  <textarea id="gx16I" name="gx16I" style="width: 27%"></textarea><br>
 
-  <label for="general28Input"><b>28.साक्षी३ (witness3):</b></label>
-  <textarea id="general28Input" name="general28Input" style="width: 67%"></textarea><br>
+  <label for="gx17I"><b>17.बाँकी रकम (amount2):</b></label>
+  <textarea id="gx17I" name="gx17I" style="width: 17%"></textarea><br>
 
-  <label for="general29Input"><b>29.साल (year):</b></label>
-  <textarea id="general29Input" name="general29Input" style="width: 17%"></textarea><br>
+  <label for="gx18I"><b>18.जम्मा रकम (amount3):</b></label>
+  <textarea id="gx18I" name="gx18I" style="width: 17%"></textarea><br>
 
-  <label for="general30Input"><b>30.महिना (month):</b></label>
-  <textarea id="general30Input" name="general30Input" style="width: 17%"></textarea><br>
+  <label for="gx19I"><b> 19.भाका (timelimit):</b></label>
+  <textarea id="gx19I" name="gx19I" style="width: 12%" placeholder="..दिन/महिना" ></textarea ><br>
 
-  <label for="general31Input"><b>31.गते (date):</b></label>
-  <textarea id="general31Input" name="general31Input"></textarea><br>
+  <label for="gx20I"><b>20.जग्गा भएको जिल्ला (jilla3):</b></label>
+  <textarea id="gx20I" name="gx20I" style="width: 12%"></textarea><br>
 
-  <label for="general32Input"><b>32.रोज (day):</b></label>
-  <textarea id="general32Input" name="general32Input" style="width: 2%"></textarea><br>
+  <label for="gx21I"><b>21.जग्गा भएको पालिका (palika3):</b></label>
+  <textarea id="gx21I" name="gx21I" style="width: 17%"></textarea>
+
+  <select id="dx3I">
+    <option value=""></option>
+    <option value="महानगरपालिका ">महानगरपालिका</option>
+    <option value="उपमहानगरपालिका ">उपमहानगरपालिका</option>
+    <option value="नगरापालिका ">नगरपालिका</option>
+    <option value="गाउँपालिका">गाउँपालिका</option></select ><br>
+
+  <label for="gx22I"><b>22.जग्गा भएको वडा (ward3):</b></label>
+  <textarea id="gx22I" name="gx22I" style="width: 3%"></textarea><br>
+
+  <label for="gx23I"><b> 23.कि.नं. (kitta):</b></label>
+  <textarea id="gx23I" name="gx23I" style="width: 4%"></textarea><br>
+
+  <label for="gx24I"><b>24.क्षेत्रफल (area):</b></label>
+  <textarea id="gx24I" name="gx24I" style="width: 17%"></textarea><br>
+
+  <label for="gx25I"><b>25.कागज गरेको स्थान (place):</b></label>
+  <textarea id="gx25I" name="gx25I" style="width: 27%" placeholder="मेरै घरको आँगनमा" ></textarea ><br>
+
+  <label for="gx26I"><b>26.साक्षी१ (witness1):</b></label>
+  <textarea id="gx26I" name="gx26I" style="width: 67%"></textarea><br>
+
+  <label for="gx27I"><b>27.साक्षी२ (witness2):</b></label>
+  <textarea id="gx27I" name="gx27I" style="width: 67%"></textarea><br>
+
+  <label for="gx28I"><b>28.साक्षी३ (witness3):</b></label>
+  <textarea id="gx28I" name="gx28I" style="width: 67%"></textarea><br>
+
+  <label for="gx29I"><b>29.साल (year):</b></label>
+  <textarea id="gx29I" name="gx29I" style="width: 17%"></textarea><br>
+
+  <label for="gx30I"><b>30.महिना (month):</b></label>
+  <textarea id="gx30I" name="gx30I" style="width: 17%"></textarea><br>
+
+  <label for="gx31I"><b>31.गते (date):</b></label>
+  <textarea id="gx31I" name="gx31I"></textarea><br>
+
+  <label for="gx32I"><b>32.रोज (day):</b></label>
+  <textarea id="gx32I" name="gx32I" style="width: 2%"></textarea><br>
 
   <button onclick="displayOutput()">Display Output</button>
   <button onclick="downloadOutput()">Download Output</button>
 
+  <div id="output" style="font-size: small"></div><br>
   <script>
     // script for the functional download button
     function downloadOutput() {
@@ -328,7 +347,7 @@
       var url = URL.createObjectURL(blob);
       var link = document.createElement("a");
       link.href = url;
-      link.download = idInputValue + ".txt";
+      link.download = idInputValue+".txt";
       link.click();
     }
     // script for copying dropdown option in clipboard through doublclick
@@ -344,7 +363,7 @@
       document.body.removeChild(dummy);
 
       var alertElement = document.createElement("div");
-      alertElement.textContent = "Copied: " + text;
+      alertElement.textContent = "Copied: "+text;
       alertElement.classList.add("alert", "show");
 
       document.body.appendChild(alertElement);
@@ -380,8 +399,10 @@
       }
     });
   </script>
-  <div id="output" style="font-size: small"></div><br>
+
+  <div id="stableOutput"></div>
+
   <!-- Output Content Recordings -->
 </body>
-  <footer><b><u>Developed by:</u></b><br>Shiva Prasad Acharya (M.Sc;, LL.M)</footer>
+
 </html>
